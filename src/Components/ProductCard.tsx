@@ -23,12 +23,12 @@ const ProductCard = () => {
           >
             Add To Cart
           </button>
-          <button 
+          <a 
             className="bg-white text-black text-[16px] font-bold py-2 px-4 my-3 rounded-full shadow-md transition duration-300"
-            onClick={showProductInfo}
+            href="/Product"
           >
-            V
-          </button>
+            Show
+          </a>
         </div>
       </div>
     </div>

@@ -1,6 +1,3 @@
-// LoginForm.tsx
-import React from 'react';
-
 interface RegisterFormInputs {
   email: string;
   password: string;
@@ -9,8 +6,8 @@ interface RegisterFormInputs {
 const RegisterForm: React.FC = () => {
 
   return (
-    <div className="flex justify-center items-center h-screen">
-      <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-1/3">
+    <div className="container flex justify-center items-center">
+      <form className="bg-white shadow rounded px-8 pt-6 pb-8 mb-4 w-full md:w-[550px]">
         <div className="mb-4">
           <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
             Email
@@ -19,7 +16,7 @@ const RegisterForm: React.FC = () => {
             id="email"
             type="email"
             placeholder="Enter your email"
-            className='p-2 w-[100%]'
+            className='p-2 w-[100%] border rounded'
           />
         </div>
         <div className="mb-6">
@@ -30,7 +27,7 @@ const RegisterForm: React.FC = () => {
             id="password"
             type="password"
             placeholder="Enter your password"
-            className='p-2 w-[100%]'
+            className='p-2 w-[100%] border rounded'
           />
         </div>
         <div className="flex items-center justify-between">
@@ -40,7 +37,7 @@ const RegisterForm: React.FC = () => {
           >
             Sign Up
           </button>
-          <a className='text-black' href='/Login'>Already Have an Account</a>
+          <a className='text-black' href='/Login'>Already have an account?</a>
         </div>
       </form>
     </div>
